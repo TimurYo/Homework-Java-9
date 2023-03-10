@@ -1,26 +1,25 @@
 public class Radio {
-    private int maxStation= 9;
-    private int minStation=0;
+    private int maxStation = 9;
+    private int minStation = 0;
     private int currentStation;
-    private int maxLevelOfSound=100;
-    private int minLevelOfSound= 0;
+    private int maxLevelOfSound = 100;
+    private int minLevelOfSound = 0;
     private int currentLevelOfSound;
 
     public Radio() {
-        maxStation=9;
+        maxStation = 9;
     }
+
     public Radio(int quantityOfStations) {
-        maxStation=minStation + quantityOfStations;
+        maxStation = minStation + quantityOfStations;
     }
+
     public int getCurrentStation() {
         return currentStation;
     }
 
     public int getMaxStation() {
         return maxStation;
-    }
-    public int getMinStation(){
-        return minStation;
     }
 
     public void setCurrentStation(int newCurrentStation) {
@@ -55,13 +54,6 @@ public class Radio {
 
     public int getCurrentLevelOfSound() {
         return currentLevelOfSound;
-    }
-
-    public int getMaxLevelOfSound(){
-        return maxLevelOfSound;
-    }
-    public int getMinLevelOfSound(){
-        return minLevelOfSound;
     }
 
     public void setCurrentLevelOfSound(int newCurrentLevelOfSound) {

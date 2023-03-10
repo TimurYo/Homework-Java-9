@@ -31,10 +31,10 @@ public class RadioTest {
     @CsvSource({
             "9,9",
     })
-    public void testOfStationConstructor(int x,int expected){
-        Radio radio=new Radio(x);
-        int actual= radio.getMaxStation();
-        Assertions.assertEquals(expected,actual);
+    public void testOfStationConstructor(int x, int expected) {
+        Radio radio = new Radio(x);
+        int actual = radio.getMaxStation();
+        Assertions.assertEquals(expected, actual);
     }
 
     @ParameterizedTest
@@ -95,6 +95,9 @@ public class RadioTest {
 
     @ParameterizedTest
     @CsvSource({
+            "102,1",
+            "101,1",
+            "100,100",
             "11,12",
             "10,11",
             "9,10",
